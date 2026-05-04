@@ -3,97 +3,202 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tecno Frío 212 | Expertos en Climatización</title>
-    <meta name="description" content="Venta e instalación de aires acondicionados en Caracas. Tecnología Inverter y confort garantizado.">
+    <title>Tecno Frío 212 | Soluciones Integrales de Climatización</title>
+    <meta name="description" content="Venta e instalación de aires acondicionados en Venezuela. Tecnología Inverter y confort garantizado. Compresores, refrigerantes y accesorios.">
     
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <header class="navbar">
+    <!-- NAVBAR -->
+    <header class="navbar" id="navbar">
         <div class="container nav-container">
-            <div class="logo-circle">
-                <img src="img/logocircular.png" alt="Tecno Frio 212 Logo"> 
+            <div class="logo-wrap">
+                <a href="#inicio">
+                    <img src="/img/logo circular.png" alt="Tecno Frio 212">
+                </a>
             </div>
-            <nav class="nav-menu">
+            <nav class="nav-menu" id="nav-menu">
                 <ul>
-                    <li><a href="#inicio">Inicio</a></li>
-                    <li><a href="#productos">Productos</a></li>
-                    <li><a href="#asesores">Asesores</a></li>
-                    <li><a href="#galeria">Galería</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
+                    <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                    <li><a href="#galeria" class="nav-link">Productos</a></li>
+                    <li><a href="#asesores" class="nav-link">Asesores</a></li>
+                    <li><a href="#contacto" class="nav-link">Contacto</a></li>
                 </ul>
             </nav>
-            <div class="nav-btns">
-                <a href="#asesores" class="btn-cotizar">Cotizar ahora</a>
+            <div class="nav-right">
+                <a href="#asesores" class="btn-cotizar">
+                    <i class="fas fa-bolt"></i> Cotizar ahora
+                </a>
+                <button class="hamburger" id="hamburger" aria-label="Menú">
+                    <span></span><span></span><span></span>
+                </button>
             </div>
         </div>
     </header>
 
+    <!-- HERO -->
     <section id="inicio" class="hero">
+        <div class="hero-bg-grid"></div>
+        <div class="container hero-container">
+            <div class="hero-text">
+                <div class="hero-badge">
+                    <i class="fas fa-snowflake"></i> Climatización de Alta Eficiencia
+                </div>
+                <h1>Tu confort <span class="gradient-text">térmico</span> es nuestra prioridad</h1>
+                <p>Distribuimos las mejores marcas de aire acondicionado, compresores, refrigerantes y accesorios para climatización residencial e industrial.</p>
+                <div class="hero-ctas">
+                    <a href="#asesores" class="btn-primary">
+                        <i class="fab fa-whatsapp"></i> Hablar con un asesor
+                    </a>
+                    <a href="#galeria" class="btn-outline">
+                        Ver productos <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <strong>+500</strong>
+                        <span>Clientes</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat">
+                        <strong>+10</strong>
+                        <span>Marcas</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat">
+                        <strong>+30</strong>
+                        <span>Años</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="hero-img-wrap">
+                    <img src="/img/banner.jpg" alt="Tecno Frío 212 - Soluciones de Climatización">
+                    <div class="hero-img-badge">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Garantía certificada</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-wave">
+            <svg viewBox="0 0 1440 80" preserveAspectRatio="none"><path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" fill="var(--bg-main)"/></svg>
+        </div>
+    </section>
+
+    <!-- MARCAS BANNER -->
+    <section class="brands-bar">
         <div class="container">
-            <div class="hero-content" data-aos="fade-up">
-                <h1>Tu confort térmico es nuestra prioridad</h1>
-                <p>Venta de las mejores marcas de aire acondicionado.</p>
-                <img src="img/banner.jpg" alt="Tecno Frio 212 banner"></div>
-                <div class="hero-actions">
-                    
-                <a href="#galeria" class="btn btn-secondary">Productos</a>
-                
+            <p class="brands-label">Marcas que distribuimos</p>
+            <div class="brands-track">
+                <div class="brands-inner">
+                    <span>Trane</span>
+                    <span>LG</span>
+                    <span>Daikin</span>
+                    <span>Carrier</span>
+                    <span>Samsung</span>
+                    <span>Haier</span>
+                    <span>Hisense</span>
+                    <span>Panasonic</span>
+                    <span>Copeland</span>
+                    <span>Toshiba</span>
+                    <span>Midea</span>
+                    <!-- duplicadas para loop infinito -->
+                    <span>Trane</span>
+                    <span>LG</span>
+                    <span>Daikin</span>
+                    <span>Carrier</span>
+                    <span>Samsung</span>
+                    <span>Haier</span>
+                    <span>Hisense</span>
+                    <span>Panasonic</span>
+                    <span>Copeland</span>
+                    <span>Toshiba</span>
+                    <span>Midea</span>
+                </div>
             </div>
         </div>
     </section>
 
+    <!-- ASESORES -->
     <section id="asesores" class="team section-padding">
         <div class="container">
-            <h2 class="section-title">Nuestros Asesores</h2>
+            <div class="section-header">
+                <span class="section-tag">Equipo</span>
+                <h2 class="section-title">Nuestros Asesores</h2>
+                <p class="section-sub">Expertos listos para orientarte en la mejor solución para tu proyecto</p>
+            </div>
             <div class="grid-vendedores">
                 
-                <div class="card-vendedor" data-aos="fade-up">
-                    <div class="vendedor-img">
-                        <img src="img/avataroli.png" alt="Orlyn">
+                <div class="card-vendedor" data-delay="0">
+                    <div class="card-top">
+                        <div class="vendedor-img">
+                            <a href="https://wa.me/584140239055" target="_blank" rel="noopener">
+                                <img src="/img/oli.png" alt="Orlyn - Especialista en Ventas">
+                            </a>
+                        </div>
+                        <div class="card-accent"></div>
                     </div>
                     <div class="vendedor-info">
                         <h3>Orlyn</h3>
                         <span class="cargo">Especialista en Ventas</span>
-                        <p>Asesoría técnica personalizada para tus proyectos.</p>
+                        <p>Asesoría técnica personalizada para proyectos residenciales e industriales de climatización.</p>
                         <div class="vendedor-actions">
-                            <a href="mailto:Tecnofrio212@gmail.com" target="_blank" rel="noopener noreferrer" class="btn-mail"><i class="fas fa-envelope"></i></a>
-                            <a href="https://wa.me/584143830586" class="btn-ws"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                            <a href="mailto:Tecnofrio212@gmail.com" class="btn-mail" title="Enviar correo">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                            <a href="https://wa.me/584143830586" target="_blank" rel="noopener" class="btn-ws">
+                                <i class="fab fa-whatsapp"></i> WhatsApp
+                            </a>
                         </div>
                     </div>
                 </div>
 
-                <div class="card-vendedor" data-aos="fade-up" data-aos-delay="100">
-                    <div class="vendedor-img">
-                        <img src="img/alejandro.png" alt="Alejandro">
+                <div class="card-vendedor" data-delay="150">
+                    <div class="card-top">
+                        <div class="vendedor-img">
+                            <a href="https://wa.me/584140239055" target="_blank" rel="noopener">
+                                <img src="/img/alejandro.png" alt="Alejandro - Especialista en Ventas">
+                            </a>
+                        </div>
+                        <div class="card-accent"></div>
                     </div>
                     <div class="vendedor-info">
                         <h3>Alejandro</h3>
                         <span class="cargo">Especialista en Ventas</span>
-                        <p>Asesoría técnica personalizada para tus proyectos.</p>
+                        <p>Asesoría técnica personalizada para proyectos residenciales e industriales de climatización.</p>
                         <div class="vendedor-actions">
-                            <a href="mailto:Tecnofrio212@gmail.com" target="_blank" rel="noopener noreferrer" class="btn-mail"><i class="fas fa-envelope"></i></a>
-                            <a href="https://wa.me/584141134387" class="btn-ws"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                            <a href="mailto:Tecnofrio212@gmail.com" class="btn-mail" title="Enviar correo">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                            <a href="https://wa.me/584141134387" target="_blank" rel="noopener" class="btn-ws">
+                                <i class="fab fa-whatsapp"></i> WhatsApp
+                            </a>
                         </div>
                     </div>
                 </div>
 
-                <div class="card-vendedor" data-aos="fade-up" data-aos-delay="200">
-                    <div class="vendedor-img">
-                        <img src="img/avatar orlyn.png" alt="olimar">
+                <div class="card-vendedor" data-delay="300">
+                    <div class="card-top">
+                        <div class="vendedor-img">
+                           <a href="https://wa.me/584140239055" target="_blank" rel="noopener"> <img src="/img/orlyn.png" alt="Olimar - Especialista en Ventas"> </a>
+                        </div>
+                        <div class="card-accent"></div>
                     </div>
                     <div class="vendedor-info">
                         <h3>Olimar</h3>
                         <span class="cargo">Especialista en Ventas</span>
-                        <p>Asesoría técnica personalizada para tus proyectos.</p>
+                        <p>Asesoría técnica personalizada para proyectos residenciales e industriales de climatización.</p>
                         <div class="vendedor-actions">
-                            <a href="mailto:Tecnofrio212@gmail.com" target="_blank" rel="noopener noreferrer" class="btn-mail"><i class="fas fa-envelope"></i></a>
-                            <a href="https://wa.me/584140239055" class="btn-ws"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                            <a href="mailto:Tecnofrio212@gmail.com" class="btn-mail" title="Enviar correo">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                            <a href="https://wa.me/584140239055" target="_blank" rel="noopener" class="btn-ws">
+                                <i class="fab fa-whatsapp"></i> WhatsApp
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -102,122 +207,250 @@
         </div>
     </section>
 
+    <!-- GALERÍA / PRODUCTOS -->
     <section id="galeria" class="gallery section-padding">
         <div class="container">
-            <h2 class="section-title">Nuestros Productos</h2>
-            <p class="gallery-description">Descubre nuestros proyectos de instalación y productos en acción</p>
-
-            <div class="gallery-container">
-                <div class="gallery-item active" data-index="0">
-                    <img src="img/catalogo/compresores.png" alt="Instalación de Aire Acondicionado Residencial">
-                    <div class="gallery-content">
-                        <h3>Instalaciones Residenciales</h3>
-                        <p>Soluciones personalizadas para el hogar con tecnología Inverter de última generación.</p>
-                    </div>
-                </div>
-
-                <div class="gallery-item" data-index="1">
-                    <img src="img/catalogo/copeland.jpeg" alt="Mantenimiento Profesional">
-                    <div class="gallery-content">
-                        <h3>Mantenimiento Profesional</h3>
-                        <p>Productos especializados para mantener tu equipo en óptimas condiciones.</p>
-                    </div>
-                </div>
-
-                <div class="gallery-item" data-index="2">
-                    <img src="img/catalogo/gas.jpeg" alt="Instalaciones Industriales">
-                    <div class="gallery-content">
-                        <h3>Proyectos Industriales</h3>
-                        <p>Refrigerante para climatización confiable y de alto rendimiento</p>
-                    </div>
-                </div>
-
-                <div class="gallery-item" data-index="3">
-                    <img src="img/catalogo/tuberia flex.jpeg" alt="Productos de Alta Eficiencia">
-                    <div class="gallery-content">
-                        <h3>Tecnología Avanzada</h3>
-                        <p>SConducción en cobre para sistemas de climatización eficientes.</p>
-                    </div>
-                </div>
-
-                <div class="gallery-item" data-index="4">
-                    <img src="img/catalogo/morecompres.jpeg" alt="Servicio al Cliente">
-                    <div class="gallery-content">
-                        <h3>Atención Personalizada</h3>
-                        <p>Tecnología en compresores para enfriamiento eficiente y duradero</p>
-                    </div>
-                </div>
-
-                <div class="gallery-item" data-index="4">
-                    <img src="img/catalogo/propano.jpeg" alt="Servicio al Cliente">
-                    <div class="gallery-content">
-                        <h3>Atención Personalizada</h3>
-                        <p>Soluciones en gas propano para climatización segura y de alto desempeño.</p>
-                    </div>
-                </div>
-
-                <div class="gallery-item" data-index="4">
-                    <img src="img/catalogo/regulador.jpeg" alt="Servicio al Cliente">
-                    <div class="gallery-content">
-                        <h3>Atención Personalizada</h3>
-                        <p>Soluciones en medición
-                    </div>
-                </div>
-
-                <div class="gallery-item" data-index="4">
-                    <img src="img/catalogo/gaspeq.jpeg" alt="Servicio al Cliente">
-                    <div class="gallery-content">
-                        <h3>Atención Personalizada</h3>
-                        <p>Asesoría técnica especializada y soporte continuo para todos nuestros clientes.</p>
-                    </div>
-                </div>
+            <div class="section-header">
+                <span class="section-tag">Catálogo</span>
+                <h2 class="section-title">Nuestros Productos</h2>
+                <p class="section-sub">Soluciones completas en equipos, insumos y accesorios para climatización</p>
             </div>
 
-            <div class="gallery-nav">
-                <div class="gallery-indicators">
-                    <span class="indicator active" data-slide="0"></span>
-                    <span class="indicator" data-slide="1"></span>
-                    <span class="indicator" data-slide="2"></span>
-                    <span class="indicator" data-slide="3"></span>
-                    <span class="indicator" data-slide="4"></span>
-                    <span class="indicator" data-slide="5"></span>
-                    <span class="indicator" data-slide="6"></span>
-                    <span class="indicator" data-slide="7"></span>
-                    <span class="indicator" data-slide="8"></span>
+            <!-- Tabs de categoría -->
+            <div class="gallery-tabs" id="gallery-tabs">
+                <button class="tab-btn active" data-tab="all">Todos</button>
+                <button class="tab-btn" data-tab="compresores">Compresores</button>
+                <button class="tab-btn" data-tab="refrigerantes">Refrigerantes</button>
+                <button class="tab-btn" data-tab="accesorios">Accesorios</button>
+            </div>
+
+            <div class="gallery-grid" id="gallery-grid">
+
+                <div class="g-card" data-cat="compresores">
+                    <div class="g-card-img">
+                        <img src="img/catalogo/compresores.png" alt="Compresores para aire acondicionado">
+                        <div class="g-card-overlay">
+                            <span class="g-tag">Compresores</span>
+                        </div>
+                    </div>
+                    <div class="g-card-body">
+                        <h3>Compresores Residenciales</h3>
+                        <p>Unidades para sistemas split y centrales. Alta eficiencia y larga vida útil.</p>
+                    </div>
+                </div>
+
+                <div class="g-card" data-cat="compresores">
+                    <div class="g-card-img">
+                        <img src="img/catalogo/copeland.jpeg" alt="Compresores Copeland industriales">
+                        <div class="g-card-overlay">
+                            <span class="g-tag">Compresores</span>
+                        </div>
+                    </div>
+                    <div class="g-card-body">
+                        <h3>Compresores Copeland</h3>
+                        <p>Compresores scroll de marca Copeland para instalaciones comerciales e industriales de alto rendimiento.</p>
+                    </div>
+                </div>
+
+                <div class="g-card" data-cat="compresores">
+                    <div class="g-card-img">
+                        <img src="img/catalogo/morecompres.jpeg" alt="Más compresores industriales">
+                        <div class="g-card-overlay">
+                            <span class="g-tag">Compresores</span>
+                        </div>
+                    </div>
+                    <div class="g-card-body">
+                        <h3>Compresores Industriales</h3>
+                        <p>Amplio stock de compresores para aplicaciones de refrigeración comercial y climatización de gran escala.</p>
+                    </div>
+                </div>
+
+                <div class="g-card" data-cat="refrigerantes">
+                    <div class="g-card-img">
+                        <img src="img/catalogo/gas.jpeg" alt="Cilindro de gas refrigerante">
+                        <div class="g-card-overlay">
+                            <span class="g-tag">Refrigerantes</span>
+                        </div>
+                    </div>
+                    <div class="g-card-body">
+                        <h3>Gas Refrigerante R-22 / R-410A</h3>
+                        <p>Cilindros de refrigerante certificados para recarga y mantenimiento de equipos de climatización.</p>
+                    </div>
+                </div>
+
+                <div class="g-card" data-cat="refrigerantes">
+                    <div class="g-card-img">
+                        <img src="img/catalogo/propano.jpeg" alt="Gas propano para climatización">
+                        <div class="g-card-overlay">
+                            <span class="g-tag">Refrigerantes</span>
+                        </div>
+                    </div>
+                    <div class="g-card-body">
+                        <h3>Gas Propano R-290</h3>
+                        <p>Refrigerante ecológico de bajo impacto ambiental, ideal para sistemas de nueva generación.</p>
+                    </div>
+                </div>
+
+                <div class="g-card" data-cat="refrigerantes">
+                    <div class="g-card-img">
+                        <img src="img/catalogo/gaspeq.jpeg" alt="Gas refrigerante en envase pequeño">
+                        <div class="g-card-overlay">
+                            <span class="g-tag">Refrigerantes</span>
+                        </div>
+                    </div>
+                    <div class="g-card-body">
+                        <h3>Refrigerante 134a</h3>
+                        <p>Gas refrigerante en presentación pequeña para recargas de mantenimiento preventivo y correctivo.</p>
+                    </div>
+                </div>
+
+                <div class="g-card" data-cat="accesorios">
+                    <div class="g-card-img">
+                        <img src="img/catalogo/tuberia flex.jpeg" alt="Tubería flexible de cobre">
+                        <div class="g-card-overlay">
+                            <span class="g-tag">Accesorios</span>
+                        </div>
+                    </div>
+                    <div class="g-card-body">
+                        <h3>Tubería Flexible de Cobre</h3>
+                        <p>Conducción en cobre de alta pureza para instalaciones de climatización eficientes y duraderas.</p>
+                    </div>
+                </div>
+
+                <div class="g-card" data-cat="accesorios">
+                    <div class="g-card-img">
+                        <img src="img/catalogo/regulador.jpeg" alt="Regulador de presión y manómetros">
+                        <div class="g-card-overlay">
+                            <span class="g-tag">Accesorios</span>
+                        </div>
+                    </div>
+                    <div class="g-card-body">
+                        <h3>Reguladores y Manómetros</h3>
+                        <p>Protección Total, Protege equipos electrónicos sensibles como computadoras, televisores y electrodomésticos.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- POR QUÉ ELEGIRNOS -->
+    <section class="why-us section-padding">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">¿Por qué nosotros?</span>
+                <h2 class="section-title">Calidad que puedes sentir</h2>
+            </div>
+            <div class="why-grid">
+                <div class="why-card">
+                    <div class="why-icon"><i class="fas fa-truck-fast"></i></div>
+                    <h4>Despacho rápido</h4>
+                    <p>Entregamos tu pedido en el menor tiempo posible a nivel nacional.</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon"><i class="fas fa-shield-halved"></i></div>
+                    <h4>Productos certificados</h4>
+                    <p>Todos nuestros equipos e insumos cuentan con certificación de calidad.</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon"><i class="fas fa-headset"></i></div>
+                    <h4>Soporte técnico</h4>
+                    <p>Nuestros asesores están disponibles para resolver tus dudas técnicas.</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon"><i class="fas fa-tag"></i></div>
+                    <h4>Precios competitivos</h4>
+                    <p>Distribuidor directo con los mejores precios del mercado venezolano.</p>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- CONTACTO / UBICACIÓN -->
     <section id="contacto" class="location section-padding">
         <div class="container">
-            <h2 class="section-title">Encuéntranos</h2>
+            <div class="section-header">
+                <span class="section-tag">Ubicación</span>
+                <h2 class="section-title">Encuéntranos</h2>
+                <p class="section-sub">Visítanos en nuestra sede o contáctanos directamente</p>
+            </div>
             <div class="location-wrapper">
                 <div class="map-container">
-<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1166.3483449033424!2d-66.83059151138032!3d10.49179159175149!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c2a5951768612e5%3A0xa4e8a15350a73215!2sEdificio%20Palomares!5e0!3m2!1ses!2sco!4v1775517663238!5m2!1ses!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                </div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1166.3483449033424!2d-66.83059151138032!3d10.49179159175149!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c2a5951768612e5%3A0xa4e8a15350a73215!2sEdificio%20Palomares!5e0!3m2!1ses!2sco!4v1775517663238!5m2!1ses!2sco" 
+                        width="600" height="420" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
                 <div class="location-info">
-                    <h3>Sede Principal</h3>
-                    <p><i class="fas fa-map-marker-alt"></i> DOMICILIO FISCAL AV AVENIDA A DE LA CARLOTA EDIF JOJOTO PISO PB LOCAL AURB LA CARLOTA CARACAS MIRANDA ZONA POSTAL 1071</p>
-                    <p><i class="fas fa-clock"></i> Lun - Sab: 8:00 AM - 5:00 PM</p>
-                    <p><i class="fas fa-phone"></i> +58 414 1213694</p>
+                    <div class="info-card">
+                        <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div>
+                            <h4>Dirección</h4>
+                            <p>Av. A de La Carlota, Edif. Jojoto PB Local, URB La Carlota, Caracas, Miranda, ZP 1071</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon"><i class="fas fa-clock"></i></div>
+                        <div>
+                            <h4>Horario de atención</h4>
+                            <p>Lunes a Sábado: 8:00 AM – 5:00 PM</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon"><i class="fas fa-phone"></i></div>
+                        <div>
+                            <h4>Teléfono</h4>
+                            <a href="tel:+584141213694">+58 414 1213694</a>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon"><i class="fas fa-envelope"></i></div>
+                        <div>
+                            <h4>Correo electrónico</h4>
+                            <a href="mailto:Tecnofrio212@gmail.com">Tecnofrio212@gmail.com</a>
+                        </div>
+                    </div>
+                    <a href="https://wa.me/584141213694" target="_blank" rel="noopener" class="btn-ws-big">
+                        <i class="fab fa-whatsapp"></i> Escríbenos por WhatsApp
+                    </a>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- FOOTER -->
     <footer class="main-footer">
-        <div class="container footer-grid">
-            <div class="footer-col">
-                <img src="img/logocircular.png" alt="Logo" class="footer-logo">
-                <p>Líderes en soluciones de climatización de alta eficiencia.</p>
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                <img src="/img/logo circular.png" alt="Tecno Frío 212" class="footer-logo">
+                <p>Líderes en soluciones integrales de climatización y refrigeración.</p>
+                <div class="footer-social">
+                    <a href="mailto:Tecnofrio212@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+                    <a href="https://wa.me/584141213694" title="WhatsApp" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i></a>
+                </div>
             </div>
+            <div class="footer-links">
+                <h5>Navegación</h5>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#galeria">Productos</a></li>
+                    <li><a href="#asesores">Asesores</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h5>Productos</h5>
+                <ul>
+                    <li><a href="#galeria">Compresores</a></li>
+                    <li><a href="#galeria">Refrigerantes</a></li>
+                    <li><a href="#galeria">Tuberías y Accesorios</a></li>
+                    <li><a href="#asesores">Cotizaciones</a></li>
+                </ul>
+            </div>
+        </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 Tecno Frío 212 - Todos los derechos reservados.</p>
+            <p>© 2026 Tecno Frío 212 · Todos los derechos reservados.</p>
         </div>
     </footer>
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
