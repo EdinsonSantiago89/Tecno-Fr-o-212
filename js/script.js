@@ -1,4 +1,4 @@
-// js/script.js
+﻿// js/script.js
 // Tecno Frío 212 - Funcionalidades Completas
 
 document.addEventListener('DOMContentLoaded', function() {
